@@ -23,5 +23,7 @@ from megaaplicacion import views as app1
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("index/", app1.display1, name= "index"),
-    path("Razas/", app1.display2, name= "razas")
+    path("Razas/", app1.display2, name= "raza"),
+    path("quiltro/", app1.display3, name= "quiltro"),
+    path("mescla/", app1.display4, name= "mescla"),
 ]

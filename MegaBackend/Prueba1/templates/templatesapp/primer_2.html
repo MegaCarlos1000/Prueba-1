@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="es">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perro</title>
+    <link rel="stylesheet" href="{%static 'css/css.css'%}">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>perro</h1>
+        </div>
+    </header>
+    <div class="button-container">
+        <a href="{% url 'quiltro' %}"><button >quiltro</button></a>
+        <a href="{% url 'raza' %}"><button >raza</button></a>
+        <a href="{% url 'mescla' %}"><button>mescla</button></a>
+    </div>
+</body>
+</html>
